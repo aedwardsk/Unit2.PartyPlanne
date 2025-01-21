@@ -29,7 +29,6 @@ async function getParties() {
     console.log("Fetched parties:", state.parties);
   } catch (error) {
     console.error("Error fetching parties:", error);
-    displayError("Unable to fetch parties.");
   }
 }
 
