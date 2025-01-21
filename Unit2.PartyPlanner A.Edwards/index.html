@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planner</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Party Planner</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Upcoming Parties</h2>
+        <ul id="party">
+          <!-- List of parties will be rendered here -->
+        </ul>
+      </section>
+
+      <section>
+        <h3>Add a New Party</h3>
+        <form id="addParty">
+          <input type="text" name="name" id="partyName" placeholder="Party Name" required />
+          <input type="date" name="date" id="partyDate" required />
+          <input type="time" name="time" id="partyTime" required />
+          <input type="text" name="location" id="partyLocation" placeholder="Location" required />
+          <textarea name="description" id="partyDescription" placeholder="Description"></textarea>
+          <button type="submit">Add Party</button>
+        </form>
+      </section>
+
+      <div id="loading-message" style="display: none">Loading...</div>
+      <div id="error-message" style="display: none"></div>
+    </main>
+  </body>
+</html>
